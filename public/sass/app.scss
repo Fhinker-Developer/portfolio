@@ -1,5 +1,7 @@
 //npx sass -w ./public/sass/app.scss:./public/css/style.css -s compressed
 
+@use "colors" as c;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    color: c.$gray-600;
 }
 
 %padding {
@@ -43,7 +46,7 @@ header {
 
     width: 100%;
     min-height: 64px;
-    background-color: rgb(178, 230, 246);
+    background-color: c.$rose-600;
 
 
     .container-view {
@@ -61,10 +64,12 @@ header {
 
         display: flex;
         gap: 18px;
+        color: c.$rose-100;
 
-        a {
+        * {
             font-size: 16px;
             text-transform: capitalize;
+            color: c.$rose-100;
         }
 
     }
@@ -77,14 +82,16 @@ main {
     flex-direction: column;
 
     width: 100%;
-    background-color: rgb(242, 176, 126);
+    background-color: c.$gray-200;
     gap: 8px;
     flex: 1;
 
     section {
 
-        background-color: red;
         min-height: 720px;
+        background-color: c.$gray-50;
+        padding: 8px;
+        border-radius: 6px;
 
     }
 }
