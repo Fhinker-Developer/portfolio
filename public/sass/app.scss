@@ -1,0 +1,106 @@
+//npx sass -w ./public/sass/app.scss:./public/css/style.css -s compressed
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth
+}
+
+%padding {
+
+    padding: 32px;
+}
+
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-view {
+
+    // background-color: red;
+    width: 90%;
+}
+
+body {
+
+    @extend %center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+header {
+    @extend %center;
+    @extend %padding;
+
+
+    width: 100%;
+    min-height: 64px;
+    background-color: rgb(178, 230, 246);
+
+
+    .container-view {
+        @extend %center;
+        justify-content: space-between
+    }
+
+
+    article {
+        @extend %center;
+        // background-color: red;
+    }
+
+    nav {
+
+        display: flex;
+        gap: 18px;
+
+        a {
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+    }
+
+}
+
+main {
+    @extend %center;
+    @extend %padding;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: rgb(242, 176, 126);
+    gap: 8px;
+    flex: 1;
+
+    section {
+
+        background-color: red;
+        min-height: 720px;
+
+    }
+}
+
+footer {
+    @extend %center;
+    @extend %padding;
+
+
+    width: 100%;
+    min-height: 64px;
+    background-color: rgb(162, 227, 251);
+
+    .container-view {
+        @extend %center;
+
+        // background-color: red;
+    }
+}
