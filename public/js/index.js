@@ -3,6 +3,7 @@
 
 const url = "https://api.github.com/users/cceffas";
 
+
 const avatar=document.querySelector(".container-img img")
 const text_name = document.querySelector(".container-txt h1")
 const text_bio = document.querySelector(".container-txt p")
