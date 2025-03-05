@@ -34,6 +34,26 @@
     width: 90%;
 }
 
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 8px;
+    padding: 8px;
+    color: c.$blue-600;
+
+
+    * {
+
+        color: c.$blue-600;
+    }
+
+    background-color:c.$blue-200;
+    border: 2px solid;
+    border-radius: 8px;
+}
+
 body {
 
     @extend %center;
@@ -71,6 +91,7 @@ header {
         display: flex;
         gap: 18px;
         color: c.$rose-100;
+
         * {
             font-size: 16px;
             text-transform: capitalize;
