@@ -42,12 +42,12 @@ progress {
     border-radius: 100%;
 
     &::-webkit-progress-bar {
-        background-color: c.$blue-200;
+        background-color: c.$rose-200;
         border-radius: 8px;
     }
 
     &::-webkit-progress-value {
-        background-color: c.$blue-600;
+        background-color: c.$rose-600;
         border-radius: 8px;
 
 
@@ -56,66 +56,32 @@ progress {
 
 .apresentation {
     display: flex;
-    justify-content: flex-start;
+ 
     align-items: center;
+    justify-content: space-evenly;
+   
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 64px;
-
-}
-
-.container-social-media {
-
-    display: flex;
-    justify-content: center;
-
-    // align-items: center;
-    padding: 8px;
-    min-height: 300px;
-    // background-color: red;
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        padding: 16px;
-
-        li {
-
-
-            i {
-                display: flex;
-                align-content: center;
-                font-size: 16px;
-                // justify-content: center;
-                gap: 8px;
-            }
-
-        }
-
-        // background-color: green;
-    }
-
 
 
 }
+
 
 .container-apresentation {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+  
 
+    gap: 64px;
+   
 
-
-    // flex-wrap: wrap;
-    // flex-flow: row wrap;
     padding: 8px;
     width: 100%;
-    min-height: 300px;
-    // background-color: red;
+
+    // background-color: rgb(61, 49, 49);
+
 
 }
 
@@ -125,7 +91,7 @@ progress {
     justify-content: center;
     align-items: center;
 
-    background-color: c.$blue-600;
+    background-color: c.$rose-600;
 
     flex-grow: 1px;
     padding: 8px;
@@ -141,7 +107,7 @@ progress {
         height: 100%;
         rotate: -20deg;
         border-radius: 6px;
-        background-color: c.$blue-300;
+        background-color: c.$rose-300;
         opacity: 0.8;
 
     }
@@ -169,16 +135,24 @@ progress {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    // align-items: center;
-    gap: 1px;
+   
 
-
+  
+    flex: 1;
+    gap: 8px;
 
     padding: 8px;
 
     flex-grow: 1px;
     max-width: 400px;
 
+    h1{
+        color: c.$rose-600;
+        text-transform: capitalize;
+        font-weight: lighter;
+
+
+    }
 
 }
 
@@ -188,6 +162,7 @@ progress {
     justify-content: center;
 
     overflow: hidden;
+    // margin-top: auto;
 
     min-height: 190px;
     width: 100%;
@@ -254,7 +229,7 @@ progress {
         align-items: center;
         content: attr(data-title);
         background-color: c.$gray-50;
-        color: c.$blue-600;
+        color: c.$rose-600;
 
         position: absolute;
         left: 0;
@@ -297,3 +272,4 @@ progress {
 
 
 }
+

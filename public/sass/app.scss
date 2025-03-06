@@ -2,9 +2,10 @@
 
 @use "colors" as c;
 @use "templates/apresentation.scss";
+@use "templates/aboutme.scss";
+@use "templates/project.scss";
 
 * {
-
     margin: 0;
     padding: 0;
     position: relative;
@@ -19,7 +20,7 @@
 }
 
 %padding {
-    padding: 32px;
+    padding: 2px;
 }
 
 %center {
@@ -28,8 +29,12 @@
     align-items: center;
 }
 
+.none {
+    display: none;
+}
+
 .container-view {
-    
+
     width: 90%;
 }
 
@@ -40,23 +45,20 @@
 
     gap: 8px;
     padding: 8px;
-    color: c.$blue-600;
+    color: c.$rose-600;
 
 
-    * {
 
-        color: c.$blue-600;
-    }
-
-    background-color:c.$blue-200;
+    background-color: c.$rose-200;
     border: 2px solid;
     border-radius: 8px;
 }
 
 body {
-
+    
     @extend %center;
     flex-direction: column;
+    overflow-x: hidden;
     width: 100%;
     min-height: 100vh;
 
@@ -71,7 +73,7 @@ header {
     width: 100%;
     min-height: 64px;
     background-color: c.$rose-600;
-    background-color: transparent;
+    // background-color: c.$rose-400;
 
 
     .container-view {
@@ -91,10 +93,11 @@ header {
         gap: 18px;
         color: c.$rose-100;
 
-        * {
+        a,
+        i {
             font-size: 16px;
             text-transform: capitalize;
-            color: c.$blue-600;
+            color: c.$white;
         }
 
     }
@@ -108,7 +111,7 @@ main {
 
     width: 100%;
     background-color: c.$gray-200;
-    gap: 8px;
+
     flex: 1;
 
     section {
@@ -116,7 +119,6 @@ main {
         min-height: 720px;
         background-color: c.$gray-50;
         padding: 8px;
-        border-radius: 6px;
 
     }
 }
@@ -135,4 +137,19 @@ footer {
 
         // background-color: red;
     }
+}
+
+@media (width < 620px) {
+
+
+    .wrap {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .container-view {
+        width: 100%;
+
+    }
+
 }

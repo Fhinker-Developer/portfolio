@@ -1,0 +1,115 @@
+@use "./../colors" as c;
+
+.title {
+
+    width: 100%;
+    top: -1.5em;
+    font-size: 6em;
+    position: absolute;
+    color: transparent;
+    opacity: 0.8;
+    background: linear-gradient(c.$gray-300, c.$gray-200, c.$gray-300);
+    background-clip: text;
+    animation: 3s linear infinite mov;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.container-about {
+
+
+    display: flex;
+    min-height: 320px;
+    gap: 16px;
+
+
+
+
+    .img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        padding: 8px;
+
+        // background-color: green;
+        width: 400px;
+        height: 400px;
+    }
+
+    .text {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 8px;
+
+
+        flex-wrap: wrap;
+        padding: 8px;
+        max-width: 400px;
+
+
+    }
+
+    .epigrafe {
+        padding: 8px;
+        margin-top: auto;
+        margin-left: auto;
+        max-width: 190px;
+
+        i {
+
+            color: c.$gray-400;
+            font-weight: lighter;
+            font-size: 14px;
+            // background-color: red;
+        }
+
+    }
+}
+
+@keyframes mov {
+
+    from {
+        left:-100vh;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+.container-social-media {
+
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        i {
+            font-size: 24px;
+            color: c.$rose-600;
+
+            &:hover {
+
+                text-shadow: 0 0 16px c.$rose-400,
+                    0 0 16px c.$rose-400;
+                color: white;
+            }
+        }
+    }
+
+
+}

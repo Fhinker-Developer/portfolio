@@ -37,3 +37,4 @@ async function apiResquest(url) {
 
 
 apiResquest(url);
+// apiResquest("https://fhinker-games.itch.io/rgbol");
